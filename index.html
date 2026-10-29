@@ -8,7 +8,8 @@
     body {
       font-family: sans-serif;
       margin: 0;
-      padding: 20px;
+      /* 固定ヘッダーに隠れないよう、上部に余白を確保 */
+      padding: 70px 20px 20px 20px;
       background-color: #f9f9f9;
     }
     header {
@@ -23,8 +24,8 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1000; 
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-      }
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
     #title {
       background-color: skyblue;
       text-align: center;
@@ -32,6 +33,7 @@
       padding: 15px;
       border-radius: 10px;
       color: #333;
+      margin-top: 10px;
     }
     h3 {
       background-color: aquamarine;
@@ -39,7 +41,6 @@
       border-radius: 5px 5px 0 0;
       margin-bottom: 0;
     }
-    
     /* 横スクロールの設定 */
     .list {
       background-color: lightblue;
@@ -49,12 +50,10 @@
       overflow-x: auto; /* はみ出たときに横スクロールさせる */
       white-space: nowrap; /* 中身を改行させずに横に並べる */
     }
-
     .item-container {
       display: inline-flex;
       gap: 15px; /* アイテム同士の間隔 */
     }
-
     .card {
       display: inline-block;
       text-align: center;
@@ -93,7 +92,6 @@
   </header>
 
   <h1 id="title">Sのホームページ</h1>
-  <br>
 
   <div class="toolbox">
     <h3>ツール一覧</h3>
@@ -140,7 +138,6 @@
   </div>
 
   <script>
-
   </script>
 </body>
 </html>
